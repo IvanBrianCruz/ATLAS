@@ -13,6 +13,12 @@ function BasicExample({ setCurrentTab }) {
     cursor: 'pointer',
   };
   
+  const navbarStyle = {
+    backgroundImage: 'url(https://IvanBrianCruz.github.io/ATLAS/img/baner.png)', // URL de la imagen de fondo
+    backgroundSize: 'cover', // Ajusta la imagen para cubrir el área del navbar
+    backgroundPosition: 'center', // Centra la imagen
+    backgroundRepeat: 'no-repeat' // Evita que la imagen se repita
+  };
 
   const keyframes = `
     @keyframes cambioColores {
@@ -31,7 +37,7 @@ function BasicExample({ setCurrentTab }) {
   return (
     <>
       <style>{keyframes}</style>
-      <Navbar expand="lg" style={{ backgroundColor: '#ed3b64' }}> {/* gris oscuro */}
+      <Navbar expand="lg" style={navbarStyle}> 
 
 
         <Container>
