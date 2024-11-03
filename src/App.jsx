@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import IntroJS from './components/IntroJS';
 import IntroCSS from './components/IntroCSS';
 import IntroHTML from './components/IntroHTML';
+import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // index.jsx o App.jsx
 import './index.css';

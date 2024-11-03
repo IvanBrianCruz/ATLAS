@@ -25,7 +25,7 @@ function BasicExample({ setCurrentTab }) {
   `;
 
   const handleLogoClick = () => {
-    window.location.href = '/';
+    window.location.href = 'https://ivanbriancruz.github.io/ATLAS/', '_blank';
   };
 
   return (
@@ -41,7 +41,7 @@ function BasicExample({ setCurrentTab }) {
             style={logoStyle}
             onClick={handleLogoClick}
           />
-          <Navbar.Brand href="#home" className="text-white">  ATLAS  </Navbar.Brand>
+          <Navbar.Brand href="https://ivanbriancruz.github.io/ATLAS/" className="text-white">  ATLAS  </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -51,12 +51,12 @@ function BasicExample({ setCurrentTab }) {
               <Nav.Link onClick={() => setCurrentTab('introHTML')} className="text-white">Introducción a HTML</Nav.Link>
               
               <div style={logoStyle}> {/* Envuelve NavDropdown en un div blanco */}
-                  <NavDropdown title="Dropdown" id="basic-nav-dropdown" >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                  <NavDropdown title="Complementos" id="basic-nav-dropdown" >
+                  <NavDropdown.Item href="#action/3.1">Clase 4</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Clase 5</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Clase 6</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.4">material</NavDropdown.Item>
                 </NavDropdown>
               </div>
               
