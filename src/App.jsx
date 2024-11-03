@@ -15,6 +15,8 @@ function App() {
 
   const renderContent = () => {
     switch (currentTab) {
+      case 'Home':
+        return <Home />;
       case 'introJS':
         return <IntroJS />;
       case 'introCSS':
