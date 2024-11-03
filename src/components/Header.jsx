@@ -11,13 +11,22 @@ function BasicExample({ setCurrentTab }) {
     filter: 'drop-shadow(0 0 15px red)',
     animation: 'cambioColores 5s infinite',
     cursor: 'pointer',
+
   };
-  
+  const menu = {
+
+    padding: '25px 200px'
+  };
+  const opfinal = {
+
+    color: 'white'
+  };
   const navbarStyle = {
     backgroundImage: 'url(https://IvanBrianCruz.github.io/ATLAS/img/baner.png)', // URL de la imagen de fondo
     backgroundSize: 'cover', // Ajusta la imagen para cubrir el área del navbar
     backgroundPosition: 'center', // Centra la imagen
-    backgroundRepeat: 'no-repeat' // Evita que la imagen se repita
+    backgroundRepeat: 'no-repeat', // Evita que la imagen se repita
+
   };
 
   const keyframes = `
@@ -37,7 +46,7 @@ function BasicExample({ setCurrentTab }) {
   return (
     <>
       <style>{keyframes}</style>
-      <Navbar expand="lg" style={navbarStyle}> 
+      <Navbar expand="lg" style={navbarStyle}>
 
 
         <Container>
@@ -47,27 +56,44 @@ function BasicExample({ setCurrentTab }) {
             style={logoStyle}
             onClick={handleLogoClick}
           />
-          <Navbar.Brand href="https://ivanbriancruz.github.io/ATLAS/" className="text-white">  ATLAS  </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link onClick={() => setCurrentTab('Home')} className="text-white">Home</Nav.Link>
-              <Nav.Link onClick={() => setCurrentTab('introJS')} className="text-white">Introducción a JavaScript</Nav.Link>
-              <Nav.Link onClick={() => setCurrentTab('introCSS')} className="text-white">Introducción a CSS</Nav.Link>
-              <Nav.Link onClick={() => setCurrentTab('introHTML')} className="text-white">Introducción a HTML</Nav.Link>
-              
-              <div style={logoStyle}> {/* Envuelve NavDropdown en un div blanco */}
-                  <NavDropdown title="Complementos" id="basic-nav-dropdown" >
-                  <NavDropdown.Item href="#action/3.1">Clase 4</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Clase 5</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Clase 6</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">material</NavDropdown.Item>
-                </NavDropdown>
-              </div>
-              
-            </Nav>
-          </Navbar.Collapse>
+          <div style={menu}>
+          <Navbar.Brand 
+  href="https://ivanbriancruz.github.io/ATLAS/" 
+  style={{
+    color: 'white',        // Cambia el color del texto
+    fontSize: '50px',       // Cambia el tamaño de la fuente
+    fontFamily: 'Arial, sans-serif',  // Cambia la fuente
+    fontWeight: 'bold',     // Ajusta el grosor de la fuente
+  }}
+>
+  ATLAS
+</Navbar.Brand>
+
+          <br></br>
+          <br></br>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav >
+                <Nav.Link onClick={() => setCurrentTab('Home')} className="text-white">Home</Nav.Link>
+                <Nav.Link onClick={() => setCurrentTab('introJS')} className="text-white">Introducción a JavaScript</Nav.Link>
+                <Nav.Link onClick={() => setCurrentTab('introCSS')} className="text-white">Introducción a CSS</Nav.Link>
+                <Nav.Link onClick={() => setCurrentTab('introHTML')} className="text-white">Introducción a HTML</Nav.Link>
+
+                <div style={logoStyle}> {/* Envuelve NavDropdown en un div blanco */}
+                  <NavDropdown title="Complementos" id="basic-nav-dropdown" style={opfinal}>
+                    <NavDropdown.Item href="#action/3.1">Clase 4</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Clase 5</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Clase 6</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">material</NavDropdown.Item>
+                  </NavDropdown>
+                </div>
+
+              </Nav>
+            </Navbar.Collapse>
+          </div>
+
         </Container>
       </Navbar>
     </>

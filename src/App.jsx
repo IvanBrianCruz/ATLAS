@@ -12,7 +12,7 @@ import './index.css';
 
 
 function App() {
-  const [currentTab, setCurrentTab] = useState('introJS');
+  const [currentTab, setCurrentTab] = useState('Home');
 
   const renderContent = () => {
     switch (currentTab) {
