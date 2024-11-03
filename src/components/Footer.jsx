@@ -20,14 +20,14 @@ function Footer() {
           </Col>
           <Col md={4}>
             <h5>Contactanos</h5>
-            <p>Email: info@webintro.com</p>
-            <p>Tel: +123 456 789</p>
+            <p>Email: ivan4912134@gmail.com</p>
+            <p>Tel: +54 9 388 4211576</p>
           </Col>
         </Row>
         <hr className="border-light" />
         <Row>
           <Col className="text-center">
-            <p className="mb-0">© 2024 Web Intro. Todos los derechos reservados.</p>
+            <p className="mb-0">© 2024 Desarrollado por Ivan Brian Cruz. Todos los derechos reservados.</p>
           </Col>
         </Row>
       </Container>

@@ -15,7 +15,7 @@ const Home = () => {
         textAlign: 'center',
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fondo semitransparente
         borderRadius: '8px',
-        margin: '1rem auto',
+        margin: '0rem auto',
         maxWidth: '800px',
       }}>
         <h1>¡Bienvenidos a mi curso de Programación!</h1>
@@ -97,7 +97,7 @@ const Home = () => {
         textAlign: 'center',
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fondo semitransparente
         borderRadius: '18px',
-        margin: '1rem auto',
+        margin: '0rem auto',
         maxWidth: '800px',
       }}>
         <h2>Cómo Instalar y Configurar Todo para el Proyecto</h2>
