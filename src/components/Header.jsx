@@ -14,8 +14,7 @@ function BasicExample({ setCurrentTab }) {
 
   };
   const menu = {
-
-    padding: '25px 200px'
+    padding: '1.5rem 4rem' 
   };
   const opfinal = {
 
