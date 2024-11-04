@@ -76,8 +76,9 @@ function BasicExample({ setCurrentTab }) {
               <Nav >
                 <Nav.Link onClick={() => setCurrentTab('Home')} className="text-white">Home</Nav.Link>
                 <Nav.Link onClick={() => setCurrentTab('introJS')} className="text-white">Introducción a JavaScript</Nav.Link>
-                <Nav.Link onClick={() => setCurrentTab('introCSS')} className="text-white">Introducción a CSS</Nav.Link>
                 <Nav.Link onClick={() => setCurrentTab('introHTML')} className="text-white">Introducción a HTML</Nav.Link>
+                <Nav.Link onClick={() => setCurrentTab('introCSS')} className="text-white">Introducción a CSS</Nav.Link>
+                
 
                 <div style={logoStyle}> {/* Envuelve NavDropdown en un div blanco */}
                   <NavDropdown title="Complementos" id="basic-nav-dropdown" style={opfinal}>
