@@ -18,9 +18,9 @@ const Home = () => {
         margin: '0rem auto',
         maxWidth: '800px',
       }}>
-        <h1>¡Bienvenidos a mi curso de Programación!</h1>
+        <h1>👋 ¡Bienvenidos a mi curso de Programación!</h1>
         <p>
-          En este curso aprenderemos a armar una web estática usando HTML, CSS y JavaScript básico. A continuación puedes ver el modelo del proyecto final que vamos a crear.
+          En este curso aprenderemos a armar una web estática usando HTML, CSS y JavaScript básico. 🌐 A continuación puedes ver el modelo del proyecto final que vamos a crear.
         </p>
         <img
           src="https://IvanBrianCruz.github.io/ATLAS/img/eje.png" // Reemplaza con la URL de tu imagen
@@ -38,7 +38,7 @@ const Home = () => {
         margin: '1rem auto',
         maxWidth: '800px',
       }}>
-        <h2>Programas que Necesitaremos Instalar</h2>
+        <h2>🛠️ Programas que Necesitaremos Instalar</h2>
         <ul style={{ listStyle: 'none', padding: 0 }}>
           <li style={{ margin: '1rem 0' }}>
             <button
@@ -53,7 +53,7 @@ const Home = () => {
                 fontSize: '16px', // Tamaño de fuente
               }}
             >
-              Visual Studio Code
+              📘 Visual Studio Code
             </button>
           </li>
           <li style={{ margin: '1rem 0' }}>
@@ -69,7 +69,7 @@ const Home = () => {
                 fontSize: '16px', // Tamaño de fuente
               }}
             >
-              Node.js
+              💻 Node.js
             </button>
           </li>
           <li style={{ margin: '1rem 0' }}>
@@ -85,7 +85,7 @@ const Home = () => {
                 fontSize: '16px', // Tamaño de fuente
               }}
             >
-              Git
+              🧰 Git
             </button>
           </li>
         </ul>
@@ -100,7 +100,7 @@ const Home = () => {
         margin: '0rem auto',
         maxWidth: '800px',
       }}>
-        <h2>Cómo Instalar y Configurar Todo para el Proyecto</h2>
+        <h2>📹 Cómo Instalar y Configurar Todo para el Proyecto</h2>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
           <iframe
             width="100%"

@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white mt-5 p-4">
+    <footer className="bg-dark text-white p-4">
       <Container>
         <Row>
           <Col md={4}>
@@ -19,7 +19,7 @@ function Footer() {
             <p>Este sitio fue creado como una introducción al mundo del desarrollo web, proporcionando recursos para principiantes.</p>
           </Col>
           <Col md={4}>
-            <h5>Contactanos</h5>
+            <h5>Contáctanos</h5>
             <p>Email: ivan4912134@gmail.com</p>
             <p>Tel: +54 9 388 4211576</p>
           </Col>
