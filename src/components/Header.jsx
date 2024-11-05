@@ -82,11 +82,11 @@ function BasicExample({ setCurrentTab }) {
 
                 <div style={logoStyle}> {/* Envuelve NavDropdown en un div blanco */}
                   <NavDropdown title="Complementos" id="basic-nav-dropdown" style={opfinal}>
-                    <NavDropdown.Item href="#action/3.1">Evaluación</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">presentacion </NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setCurrentTab('Evaluacion')}>Evaluación</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setCurrentTab('Presentacion')}>presentacion </NavDropdown.Item>
                     <NavDropdown.Item onClick={() => setCurrentTab('Herramientas')}>Herramientas</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">material</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setCurrentTab('Material')}>material</NavDropdown.Item>
                   </NavDropdown>
                 </div>
 

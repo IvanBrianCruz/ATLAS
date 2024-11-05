@@ -9,9 +9,9 @@ function Footer() {
           <Col md={4}>
             <h5>Recursos</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-white">Documentación de JavaScript</a></li>
-              <li><a href="#" className="text-white">Documentación de CSS</a></li>
-              <li><a href="#" className="text-white">Documentación de HTML</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=10Eii3csMFCFRwdSypdOmm_Xs1L6X-ouB" className="text-white" target="_blank" rel="noopener noreferrer">Documentación de JavaScript</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=10HAVsjx9f-YbZAGNCkskF9tcv9cXJm5S" className="text-white" target="_blank" rel="noopener noreferrer">Documentación de HTML</a></li>
+              <li><a href="https://drive.google.com/uc?export=download&id=104CRTFBhz9oYQi6VlNeYnkc0Yh6PFToh" className="text-white" target="_blank" rel="noopener noreferrer">Documentación de CSS</a></li>
             </ul>
           </Col>
           <Col md={4}>
