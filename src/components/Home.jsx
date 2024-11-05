@@ -1,6 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Función para abrir el modal
+  const openModal = () => setIsModalOpen(true);
+
+  // Función para cerrar el modal
+  const closeModal = () => setIsModalOpen(false);
+
+  // Detectar la tecla "Esc" para cerrar el modal
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div style={{
       backgroundImage: 'url(https://IvanBrianCruz.github.io/ATLAS/img/fondo.png)',
@@ -25,9 +45,47 @@ const Home = () => {
         <img
           src="https://IvanBrianCruz.github.io/ATLAS/img/eje.png" // Reemplaza con la URL de tu imagen
           alt="Modelo del proyecto a lograr"
-          style={{ width: '80%', margin: '1rem auto', borderRadius: '8px' }}
+          style={{ width: '80%', margin: '1rem auto', borderRadius: '8px', cursor: 'pointer' }}
+          onClick={openModal}
         />
       </section>
+
+      {/* Modal para mostrar la imagen en pantalla completa */}
+      {isModalOpen && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'rgba(0, 0, 0, 0.9)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+        }}>
+          <img
+            src="https://IvanBrianCruz.github.io/ATLAS/img/eje.png" // Reemplaza con la URL de tu imagen
+            alt="Modelo del proyecto ampliado"
+            style={{ width: '90%', maxWidth: '800px', borderRadius: '8px' }}
+          />
+          <button
+            onClick={closeModal}
+            style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              background: 'none',
+              color: '#fff',
+              fontSize: '2rem',
+              border: 'none',
+              cursor: 'pointer',
+            }}
+          >
+            &times;
+          </button>
+        </div>
+      )}
 
       {/* Sección de programas necesarios */}
       <section style={{
@@ -47,10 +105,10 @@ const Home = () => {
                 padding: '0.5rem 2rem',
                 borderRadius: '5px',
                 cursor: 'pointer',
-                backgroundColor: '#007ACC', // Color de fondo del botón
-                color: '#fff', // Color del texto
+                backgroundColor: '#007ACC',
+                color: '#fff',
                 border: 'none',
-                fontSize: '16px', // Tamaño de fuente
+                fontSize: '16px',
               }}
             >
               📘 Visual Studio Code
@@ -63,10 +121,10 @@ const Home = () => {
                 padding: '0.5rem 2rem',
                 borderRadius: '5px',
                 cursor: 'pointer',
-                backgroundColor: '#8CC84B', // Color de fondo del botón
-                color: '#fff', // Color del texto
+                backgroundColor: '#8CC84B',
+                color: '#fff',
                 border: 'none',
-                fontSize: '16px', // Tamaño de fuente
+                fontSize: '16px',
               }}
             >
               💻 Node.js
@@ -79,10 +137,10 @@ const Home = () => {
                 padding: '0.5rem 2rem',
                 borderRadius: '5px',
                 cursor: 'pointer',
-                backgroundColor: '#F05032', // Color de fondo del botón
-                color: '#fff', // Color del texto
+                backgroundColor: '#F05032',
+                color: '#fff',
                 border: 'none',
-                fontSize: '16px', // Tamaño de fuente
+                fontSize: '16px',
               }}
             >
               🧰 Git

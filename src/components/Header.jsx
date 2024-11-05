@@ -84,7 +84,7 @@ function BasicExample({ setCurrentTab }) {
                   <NavDropdown title="Complementos" id="basic-nav-dropdown" style={opfinal}>
                     <NavDropdown.Item href="#action/3.1">Evaluación</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">presentacion </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Clase 6</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => setCurrentTab('Herramientas')}>Herramientas</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">material</NavDropdown.Item>
                   </NavDropdown>

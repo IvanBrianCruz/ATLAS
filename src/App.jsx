@@ -5,6 +5,7 @@ import IntroJS from './components/IntroJS';
 import IntroCSS from './components/IntroCSS';
 import IntroHTML from './components/IntroHTML';
 import Home from './components/Home';
+import Herramientas from './components/Herramientas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // index.jsx o App.jsx
 import './index.css';
@@ -24,8 +25,10 @@ function App() {
         return <IntroCSS />;
       case 'introHTML':
         return <IntroHTML />;
+      case 'Herramientas': // Debe ir antes del default
+        return <Herramientas />;
       default:
-        return <IntroJS />;
+        return <Home />;
     }
   };
 
