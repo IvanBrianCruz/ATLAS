@@ -17,7 +17,7 @@ const IntroJS = () => {
       textAlign: 'center',
     }}>
       <div style={{ maxWidth: '1000px', width: '100%' }}>
-        
+
         {/* Nueva Sección 1 */}
         <div style={{
           marginBottom: '2rem',
@@ -28,8 +28,8 @@ const IntroJS = () => {
           <h2>🎥 Video Explicativo Adicional</h2>
           <iframe
             width="100%"
-            height="600px"
-            src="https://www.youtube.com/embed/Y-OhzQpsRwI?si=b95ZnYQaJcCKeJZS"
+            height="500px"
+            src="https://www.youtube.com/embed/4IcVGGben9w"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -70,7 +70,7 @@ const IntroJS = () => {
           <iframe
             src="https://drive.google.com/file/d/1-uHB87p9H1kZocB2noDrjuCXTNKlHXVI/preview"
             width="100%"
-            height="600px"
+            height="500px"
             allow="autoplay"
           ></iframe>
           <div style={{ marginTop: '1rem', textAlign: 'center' }}>
@@ -106,7 +106,7 @@ const IntroJS = () => {
             allow="fullscreen; autoplay;"
             allowFullScreen
             width="100%"
-            height="600px"
+            height="500px"
             frameBorder="0"
             src="https://es.educaplay.com/juego/21148367-quiz_sobre_etiquetas_html.html"
           ></iframe>

@@ -27,7 +27,7 @@ function Footer() {
         <hr className="border-light" />
         <Row>
           <Col className="text-center">
-            <p className="mb-0">© 2024 Desarrollado por Ivan Brian Cruz. Todos los derechos reservados.</p>
+            <p className="mb-0">© 2024 Desarrollado por Ivan Brian Cruz. Casi todos los derechos reservados.</p>
           </Col>
         </Row>
       </Container>

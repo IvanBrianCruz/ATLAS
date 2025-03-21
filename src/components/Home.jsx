@@ -30,6 +30,8 @@ const Home = () => {
       color: '#fff', // Color del texto blanco para el contraste
     }}>
       {/* Sección de bienvenida */}
+      <br />
+      <br />
       <section style={{
         padding: '2rem',
         textAlign: 'center',
@@ -163,7 +165,7 @@ const Home = () => {
           <iframe
             width="100%"
             height="450"
-            src="https://www.youtube.com/embed/6pD7_rcFrj8"
+            src="https://www.youtube.com/embed/4IcVGGben9w"
             title="Cómo instalar y configurar Visual Studio Code, Node.js y Git"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -171,6 +173,8 @@ const Home = () => {
           ></iframe>
         </div>
       </section>
+      <br />
+      <br />
     </div>
   );
 };

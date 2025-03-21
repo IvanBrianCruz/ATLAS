@@ -50,7 +50,7 @@ function BasicExample({ setCurrentTab }) {
 
         <Container>
           <img
-            src='https://IvanBrianCruz.github.io/ATLAS/img/atlas.png'
+            src='https://ivanbriancruz.github.io/CURSO-ATLAS/img/logo2025.png'
             alt="Logo Atlas"
             style={logoStyle}
             onClick={handleLogoClick}
