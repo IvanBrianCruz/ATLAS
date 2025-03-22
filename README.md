@@ -1,7 +1,7 @@
 # 🚀 Plataforma de Aprendizaje para Programadores
 
 [🔗 Ir a la Web](https://ivanbriancruz.github.io/ATLAS/)  
-![Plataforma de Programación](https://via.placeholder.com/800x400.png?text=Plataforma+de+Aprendizaje)
+![Plataforma de Programación](https://raw.githubusercontent.com/IvanBrianCruz/ATLAS/refs/heads/main/public/img/banner.png)
 
 ## 📚 Sobre la Plataforma
 
